@@ -1,0 +1,5 @@
+output.txt
+README.md
+requirements.txt
+Week_2.ipynb
+my@email.com

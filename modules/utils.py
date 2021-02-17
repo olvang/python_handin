@@ -34,9 +34,9 @@ def print_emails(*file_names):
 
 
 def write_headlines(*md_files, out='output_md.txt'):
-    for md_file in md_files:
-        myfile = open(md_file, 'r')
-        for line in myfile:
-            if line.startswith('#'):
-                with open(out, 'a') as file_object:
+    with open(out, 'a') as file_object:
+        for md_file in md_files:
+            myfile = open(md_file, 'r')
+            for line in myfile:
+                if line.startswith('#'):
                     file_object.write(line + '\n')
